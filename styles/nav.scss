@@ -1,0 +1,23 @@
+.nav {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  &__left {
+    font-size: 1.5rem;
+  }
+  &__right {
+    &__ul {
+      list-style-type: none;
+      display: flex;
+      gap: 2rem;
+      &__li {
+        padding: 1rem;
+        cursor: pointer;
+        &:hover {
+        }
+      }
+    }
+  }
+}
