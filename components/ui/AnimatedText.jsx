@@ -1,4 +1,4 @@
-import "@/styles/animatedText.scss";
+import "@/styles/ui/animatedText.scss";
 
 const IndexPage = ({ text }) => {
   return (

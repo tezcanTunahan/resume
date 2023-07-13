@@ -1,0 +1,17 @@
+.projects {
+  min-height: 100vh;
+  padding: 0 0 10rem 0;
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  &__title {
+    font-size: 3rem;
+  }
+  &__proje {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+}

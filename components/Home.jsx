@@ -1,12 +1,12 @@
 import "@/styles/home.scss";
-import AnimatedText from "./AnimatedText";
-import Button from "./Button";
+import AnimatedText from "@/components/ui/AnimatedText";
+import Button from "@/components/ui/Button";
 
 export default function Home() {
   return (
     <div className="home">
       <div className="home__top">
-        <h1 className="home__top__title">Selam ben Tunahan</h1>
+        <h1 className="home__top__title">Hi I'm Tunahan</h1>
         <h2 className="home__top__text">
           Software Engineer //{" "}
           <span className="text-animation">Frontend Developer</span>

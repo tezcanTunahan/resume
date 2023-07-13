@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import "@/styles/global.scss";
 
@@ -11,6 +12,7 @@ const RootLayout = ({ children }) => (
     <body suppressHydrationWarning={true}>
       <Nav />
       <main className="app">{children}</main>
+      <Footer />
     </body>
   </html>
 );

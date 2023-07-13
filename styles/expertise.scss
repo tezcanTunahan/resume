@@ -1,3 +1,26 @@
 .expertise {
-  width: 100vw;
+  width: 80vw;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__top {
+    width: 100%;
+    &__title {
+      font-size: 3rem;
+    }
+  }
+  &__mid {
+    display: flex;
+    width: 100%;
+    &__subtitle {
+      font-size: 2rem;
+    }
+    &__text {
+      font-size: 1.5rem;
+    }
+  }
 }
