@@ -15,6 +15,7 @@ export default function Card({ img, title, desc, tech, link }) {
         <a className="card--right__links" href={link}>
           Live
         </a>
+        <a href="">Github</a>
       </div>
     </div>
   );

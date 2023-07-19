@@ -2,7 +2,7 @@ import "@/styles/work.scss";
 
 export default function Work() {
   return (
-    <div className="work">
+    <section id="work" className="work">
       <div className="work__top">
         <h1 className="work__top__title">Work Experiance</h1>
       </div>
@@ -40,6 +40,6 @@ export default function Work() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -19,7 +19,7 @@ export default function Projects() {
           tech="REACT//NODE//EXPRESS//MONGODB//SCSS"
         />
         <Card
-          title="Sorting"
+          title="Sorting // Visualization"
           img={sorting}
           desc="It's basically sorts an array and visualize it"
           link="https://sortvisu.netlify.app/"
