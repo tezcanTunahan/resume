@@ -12,7 +12,7 @@ export default function Nav() {
   return (
     <div className="nav">
       <div className="nav__left">
-        <a href="/">tunahantezcan.com</a>
+        <a href="/">Tunahan Tezcan</a>
       </div>
       <div className="nav__right">
         <ul className="nav__right__ul">

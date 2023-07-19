@@ -14,7 +14,7 @@ export default function Projects() {
         <Card
           title="Hemlock // Blog"
           img={hemlock}
-          desc="Hemlcok is a MERN stack app its basicly a blog site you can register // login and write // read and like// dislike blog posts"
+          desc="Hemlcok is a MERN stack app its basically  a blog site you can register // login and write // read and like// dislike blog posts"
           link="https://www.hemlock.blog/"
           tech="REACT//NODE//EXPRESS//MONGODB//SCSS"
         />
