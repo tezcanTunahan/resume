@@ -25,7 +25,7 @@
 }
 
 .text-animation {
-  background: linear-gradient(to right, rgb(129, 255, 61), rgb(56, 179, 245));
+  background: linear-gradient(to right, #adff2f, rgb(56, 179, 245));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: text-animation 5s infinite linear;

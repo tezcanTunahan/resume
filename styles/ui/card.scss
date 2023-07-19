@@ -1,6 +1,5 @@
 .card {
   display: flex;
-
   &--left {
     flex-basis: 50%;
     &__img {
@@ -16,8 +15,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    &__title {
+      font-size: 2rem;
+      color: greenyellow;
+    }
     &__desc {
       text-align: center;
+    }
+    &__links {
+      color: wheat;
+      text-decoration: none;
     }
   }
 }

@@ -8,7 +8,9 @@ export default function Expertise() {
       </div>
       <div className="expertise__mid">
         <h3 className="expertise__mid__subtitle">
-          HTML // CSS // JS // REACT // NEXTJS // MongoDB // NoSQL and more...
+          HTML // CSS // JS // REACT //{" "}
+          <span style={{ color: "#adff2f" }}>NEXTJS</span> // MongoDB // NoSQL
+          and more...
         </h3>
         <p className="expertise__mid__text">
           I am a computer engineer who is in his senior year. I have a high
