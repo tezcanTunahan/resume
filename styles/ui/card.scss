@@ -13,14 +13,14 @@
     display: flex;
     gap: 1rem;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     &__title {
       font-size: 2rem;
       color: greenyellow;
     }
     &__desc {
-      text-align: center;
+      text-align: start;
     }
     &__links {
       color: white;
