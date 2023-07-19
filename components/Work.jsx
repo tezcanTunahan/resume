@@ -10,28 +10,33 @@ export default function Work() {
         <div className="work__mid__card">
           <h1 className="work__mid__card__title">Your Company could be next</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            harum voluptate officia non voluptatibus atque fuga quas aliquid
-            neque est, ut nemo soluta, sunt temporibus, cupiditate esse.
-            Eveniet, provident inventore!
+            I am looking for teammates with whom I can share my energy and
+            motivation if you think the same feel free to connect me.
           </p>
         </div>
         <div className="work__mid__card">
-          <h1 className="work__mid__card__title">Archi's Academy</h1>
+          <a
+            href="https://www.archisacademy.com"
+            className="work__mid__card__title"
+          >
+            Archi's Academy
+          </a>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            harum voluptate officia non voluptatibus atque fuga quas aliquid
-            neque est, ut nemo soluta, sunt temporibus, cupiditate esse.
-            Eveniet, provident inventore!
+            I attended a bootcamp as a frontend developer focusing on React and
+            Next.js. Throughout the bootcamp, I learned the fundamentals of both
+            React and Next.js and gained hands-on experience through practical
+            projects.
           </p>
         </div>
         <div className="work__mid__card">
-          <h1 className="work__mid__card__title">Appcent</h1>
+          <a href="https://www.appcent.mobi" className="work__mid__card__title">
+            Appcent
+          </a>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            harum voluptate officia non voluptatibus atque fuga quas aliquid
-            neque est, ut nemo soluta, sunt temporibus, cupiditate esse.
-            Eveniet, provident inventore!
+            I worked as a front-end developer intern focusing on React and
+            Next.js. Throughout the internship, I learned the fundamentals of
+            both React and Next.js and gained hands-on experience through
+            practical projects.
           </p>
         </div>
       </div>

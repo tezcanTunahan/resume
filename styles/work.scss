@@ -15,8 +15,17 @@
     flex-direction: column;
     gap: 2rem;
     &__card {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
       &__title {
         font-size: 2rem;
+        cursor: pointer;
+        color: greenyellow;
+        text-decoration: none;
+        &:hover {
+          color: #fff;
+        }
       }
     }
   }
