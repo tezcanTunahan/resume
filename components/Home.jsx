@@ -1,6 +1,5 @@
 "use client";
 import "@/styles/home.scss";
-import AnimatedText from "@/components/ui/AnimatedText";
 import Button from "@/components/ui/Button";
 
 export default function Home() {
@@ -23,11 +22,7 @@ export default function Home() {
         </h2>
         <Button text="Download Resume" onClick={handleDownload} />
       </div>
-      <div className="home__bot">
-        <AnimatedText
-          text={"SOFTWARE ENGINEER // FRONTEND DEVELOPER // WEB DEVELOPER"}
-        />
-      </div>
+      <div className="home__bot"></div>
     </div>
   );
 }
