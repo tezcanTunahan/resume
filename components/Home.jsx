@@ -7,11 +7,9 @@ export default function Home() {
   const handleDownload = () => {
     const pdfFileName = "TunahanTezcan.pdf";
     const pdfPath = `/resume/${pdfFileName}`;
-
     const link = document.createElement("a");
     link.href = pdfPath;
     link.download = pdfFileName;
-
     link.click();
   };
 

@@ -7,8 +7,8 @@ const Page = () => (
   <section>
     <Home />
     <Expertise />
-    <Projects />
     <Work />
+    <Projects />
   </section>
 );
 
