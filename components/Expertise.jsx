@@ -16,7 +16,7 @@ export default function Expertise() {
   }, [isInView]);
 
   return (
-    <div ref={ref} className="expertise">
+    <section ref={ref} className="expertise">
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
@@ -45,6 +45,6 @@ export default function Expertise() {
           </p>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 }

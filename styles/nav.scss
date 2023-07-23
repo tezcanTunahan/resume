@@ -22,13 +22,30 @@
         a {
           color: white;
           text-decoration: none;
-          transition: all 0.5s ease-in-out;
+          transition: color 0.5s ease-in-out;
           &:hover {
             color: greenyellow;
           }
         }
         &:hover {
           color: greenyellow;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    &__left {
+      font-size: 1rem;
+    }
+    &__right {
+      &__ul {
+        &__li {
+          a {
+            font-size: 0.8rem;
+          }
         }
       }
     }

@@ -27,7 +27,7 @@ export default function Home() {
   };
 
   return (
-    <div ref={ref} className="home">
+    <section ref={ref} className="home">
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
@@ -46,6 +46,6 @@ export default function Home() {
         <Button text="Download Resume" onClick={handleDownload} />
       </motion.div>
       <div className="home__bot"></div>
-    </div>
+    </section>
   );
 }

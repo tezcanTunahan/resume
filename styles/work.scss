@@ -30,3 +30,20 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .work {
+    &__top {
+      &__title {
+        font-size: 2rem;
+      }
+    }
+    &__mid {
+      &__card {
+        &__title {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

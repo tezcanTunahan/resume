@@ -6,7 +6,7 @@ import sorting from "@/public/imgs/sorting.png";
 
 export default function Projects() {
   return (
-    <div className="projects">
+    <section className="projects">
       <div className="projects__title">
         <h1>Projects</h1>
       </div>
@@ -33,6 +33,6 @@ export default function Projects() {
           tech="REACT//CSS"
         />
       </div>
-    </div>
+    </section>
   );
 }

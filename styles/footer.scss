@@ -7,3 +7,10 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 40vh;
+    font-size: 0.5rem;
+  }
+}
