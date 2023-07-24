@@ -5,30 +5,35 @@ import { useEffect, useRef } from "react";
 
 export default function Expertise() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const mainControls = useAnimation();
+  const isInView = useInView(ref);
+  const controls = useAnimation();
+
+  const animateTyping = () => {
+    controls.start({
+      opacity: 1,
+      clipPath: `inset(0% ${0}% 0% 0%)`,
+      transition: { duration: 1.5 },
+    });
+  };
+
   useEffect(() => {
     if (isInView) {
-      mainControls.start("visible");
+      animateTyping();
     } else {
-      mainControls.start("hidden");
+      controls.start({
+        opacity: 0,
+        clipPath: "inset(0% 100% 0% 0%)",
+      });
     }
   }, [isInView]);
 
   return (
-    <section ref={ref} className="expertise">
-      <motion.div
-        variants={{
-          hidden: { opacity: 0, y: 75 },
-          visible: { opacity: 1, y: 0 },
-        }}
-        initial="hidden"
-        animate={mainControls}
-        transition={{ duration: 1.5, delay: 0.5 }}
-      >
+    <section ref={ref}>
+      <div className="expertise">
         <div className="expertise__top">
           <h1 className="expertise__top__title">My Expertise</h1>
         </div>
+
         <div className="expertise__mid">
           <h3 className="expertise__mid__subtitle">
             HTML // CSS // Scss // Java // JavaScript // REACT// Node // Express
@@ -38,13 +43,19 @@ export default function Expertise() {
               and I'm willing to learn new tech stuff.
             </span>
           </h3>
-          <p className="expertise__mid__text">
-            I am a computer engineer who is in his senior year. I have a high
-            interest in frontend and web development. I am willing to learn and
-            try new things.
-          </p>
+          <div className="expertise__mid__text">
+            <motion.div
+              initial={{ opacity: 0, clipPath: "inset(0% 100% 0% 0%)" }}
+              animate={controls}
+              style={{ fontFamily: "Arial", fontSize: 24, lineHeight: 1.6 }}
+            >
+              I am a computer engineer who is in his senior year. I have a high
+              interest in frontend and web development. I am willing to learn
+              and try new things.
+            </motion.div>
+          </div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

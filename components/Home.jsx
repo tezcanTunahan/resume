@@ -30,12 +30,12 @@ export default function Home() {
     <section ref={ref} className="home">
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 75 },
+          hidden: { opacity: 0, y: 100 },
           visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 1.5, delay: 0.5 }}
+        transition={{ duration: 1 }}
         className="home__top"
       >
         <h1 className="home__top__title">Hi I'm Tunahan</h1>
