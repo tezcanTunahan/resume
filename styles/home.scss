@@ -18,6 +18,18 @@
     &__text {
       font-size: 2rem;
     }
+    &__icons {
+      display: flex;
+      gap: 1rem;
+      font-size: 2rem;
+      a {
+        color: white;
+        &:hover {
+          color: greenyellow;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
   }
   &__bot {
     flex-basis: 1%;

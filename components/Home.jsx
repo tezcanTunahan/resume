@@ -1,5 +1,7 @@
 "use client";
 import "@/styles/home.scss";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 import Button from "@/components/ui/Button";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
@@ -44,6 +46,17 @@ export default function Home() {
           <span className="text-animation">Frontend Developer</span>
         </h2>
         <Button text="Download Resume" onClick={handleDownload} />
+        <div className="home__top__icons">
+          <a
+            href="https://www.linkedin.com/in/tunahan-t-055244211/"
+            target="_blank"
+          >
+            <FaLinkedin />
+          </a>
+          <a href="https://github.com/tezcanTunahan" target="_blank">
+            <FaGithub />
+          </a>
+        </div>
       </motion.div>
       <div className="home__bot"></div>
     </section>
