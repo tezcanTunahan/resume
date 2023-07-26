@@ -39,10 +39,10 @@ export default function Card({ img, title, desc, tech, link }) {
         </div>
         <p className="card--right__desc">{desc}</p>
         <p className="card--right__tech">{tech}</p>
-        <a className="card--right__links" href={link}>
-          Live
-        </a>
-        <a href="">Github</a>
+        <div className="card--right__links">
+          <a href={link}>Live</a>
+          <a href="">Github</a>
+        </div>
       </div>
     </div>
   );

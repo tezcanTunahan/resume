@@ -28,7 +28,7 @@ export default function Expertise() {
   }, [isInView]);
 
   return (
-    <section ref={ref}>
+    <section>
       <div className="expertise">
         <div className="expertise__top">
           <h1 className="expertise__top__title">My Expertise</h1>
@@ -45,6 +45,7 @@ export default function Expertise() {
           </h3>
           <div className="expertise__mid__text">
             <motion.div
+              ref={ref}
               initial={{ opacity: 0, clipPath: "inset(0% 100% 0% 0%)" }}
               animate={controls}
               style={{ fontFamily: "Arial", fontSize: 24, lineHeight: 1.6 }}

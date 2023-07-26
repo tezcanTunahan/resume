@@ -33,7 +33,7 @@ export default function Work() {
             <h1 className="work__mid__card__title">
               Your Company could be next
             </h1>
-            <p>
+            <p className="work__mid__card__text">
               I am looking for teammates with whom I can share my energy and
               motivation if you think the same feel free to connect me.
             </p>
@@ -55,11 +55,18 @@ export default function Work() {
             >
               Archi's Academy
             </a>
-            <p>
-              I attended a bootcamp as a frontend developer focusing on React
-              and Next.js. Throughout the bootcamp, I learned the fundamentals
-              of both React and Next.js and gained hands-on experience through
-              practical projects.
+            <p className="work__mid__card__text">
+              I attended a boot camp as a frontend developer at Archi's Academy
+              thenks to{" "}
+              <a
+                className="work__mid__card__text__link"
+                href="https://saksikampus.com/"
+              >
+                Saksı Kampüs
+              </a>
+              . I was focusing on React and Next.js. Throughout the boot camp, I
+              learned the fundamentals of both React and Next.js and gained
+              hands-on through practical projects.
             </p>
           </div>
         </motion.div>
@@ -80,7 +87,7 @@ export default function Work() {
             >
               Appcent
             </a>
-            <p>
+            <p className="work__mid__card__text">
               I worked as a front-end developer intern focusing on React and
               Next.js. Throughout the internship, I learned the fundamentals of
               both React and Next.js and gained hands-on experience through

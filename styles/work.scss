@@ -5,6 +5,7 @@
   margin: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 3rem;
   &__top {
     &__title {
@@ -26,6 +27,16 @@
         text-decoration: none;
         &:hover {
           color: #fff;
+        }
+      }
+      &__text {
+        width: 75%;
+        &__link {
+          color: greenyellow;
+          text-decoration: none;
+          &:hover {
+            color: #fff;
+          }
         }
       }
     }

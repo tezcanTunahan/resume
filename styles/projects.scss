@@ -1,7 +1,7 @@
 .projects {
   min-height: 100vh;
   padding: 0 0 10rem 0;
-  width: 100%;
+  width: 80%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
       font-size: 2rem;
     }
     &__proje {
-      gap: 1rem;
+      gap: 5rem;
     }
   }
 }
