@@ -1,18 +1,15 @@
+@import "./variables.scss";
 .projects {
   min-height: 100vh;
-  padding: 0 0 10rem 0;
   width: 80%;
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  @include flex(center, flex-start, column, 0);
   &__title {
     font-size: 3rem;
+    margin-bottom: 3rem;
   }
   &__proje {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
+    @include flex(space-between, center, column, 5rem);
   }
 }
 
@@ -20,9 +17,6 @@
   .projects {
     &__title {
       font-size: 2rem;
-    }
-    &__proje {
-      gap: 5rem;
     }
   }
 }

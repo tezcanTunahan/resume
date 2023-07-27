@@ -1,8 +1,4 @@
-$text: #f5fff0;
-$background: black;
-$primary: #5dfd08;
-$secondary: #123201;
-$accent: #5dfd08;
+@import "./variables.scss";
 
 * {
   margin: 0;
@@ -14,4 +10,15 @@ $accent: #5dfd08;
 body {
   background: $background;
   color: $text;
+}
+
+a {
+  color: $text;
+  text-decoration: none;
+  &:hover {
+    color: $primary;
+  }
+}
+ul {
+  list-style: none;
 }

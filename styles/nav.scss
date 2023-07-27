@@ -1,35 +1,19 @@
+@import "./variables.scss";
 .nav {
   height: 10vh;
   width: 80vw;
   margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex(space-between, center, row, 0);
   &__left {
     font-size: 1.5rem;
-    a {
-      color: white;
-      text-decoration: none;
-    }
   }
   &__right {
     &__ul {
-      list-style-type: none;
-      display: flex;
-      gap: 2rem;
+      @include flex(space-between, center, row, 0);
       &__li {
         padding: 1rem;
-        cursor: pointer;
-        a {
-          color: white;
-          text-decoration: none;
-          transition: color 0.5s ease-in-out;
-          &:hover {
-            color: greenyellow;
-          }
-        }
-        &:hover {
-          color: greenyellow;
+        span {
+          color: $primary;
         }
       }
     }

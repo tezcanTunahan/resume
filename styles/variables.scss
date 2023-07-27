@@ -1,0 +1,25 @@
+$text: #fafafa;
+$background: #050505;
+$primary: #7ee2cb;
+$secondary: #0a2129;
+$accent: #83e29c;
+@mixin flex($justify-content, $align-items, $flex-direction, $gap) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+  gap: $gap;
+  @media screen and (max-width: 768px) {
+    gap: $gap / 2;
+  }
+}
+
+@mixin fontsize($size) {
+  font-size: $size;
+  @media screen and (max-width: 768px) {
+    font-size: $size / 1.5;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: $size / 2;
+  }
+}

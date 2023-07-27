@@ -18,7 +18,7 @@ export default function Nav() {
         <ul className="nav__right__ul">
           <li className="nav__right__ul__li">
             <a href="#" onClick={handleMail}>
-              Contact <span style={{ color: "#adff2f" }}>me</span>
+              Contact <span>me</span>
             </a>
           </li>
           <li className="nav__right__ul__li">

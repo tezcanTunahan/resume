@@ -49,22 +49,13 @@ export default function Work() {
           transition={{ duration: 1, delay: 0.2 }}
         >
           <div className="work__mid__card">
-            <a
-              href="https://www.archisacademy.com"
-              className="work__mid__card__title"
-            >
-              Archi's Academy
-            </a>
+            <h1 className="work__mid__card__title">
+              <a href="https://www.archisacademy.com">Archi's Academy</a>
+            </h1>
             <p className="work__mid__card__text">
               I attended a boot camp as a frontend developer at Archi's Academy
-              thenks to{" "}
-              <a
-                className="work__mid__card__text__link"
-                href="https://saksikampus.com/"
-              >
-                Saksı Kampüs
-              </a>
-              . I was focusing on React and Next.js. Throughout the boot camp, I
+              thenks to <a href="https://saksikampus.com/">Saksı Kampüs</a>. I
+              was focusing on React and Next.js. Throughout the boot camp, I
               learned the fundamentals of both React and Next.js and gained
               hands-on through practical projects.
             </p>
@@ -81,12 +72,9 @@ export default function Work() {
           transition={{ duration: 1, delay: 0.4 }}
         >
           <div className="work__mid__card">
-            <a
-              href="https://www.appcent.mobi"
-              className="work__mid__card__title"
-            >
-              Appcent
-            </a>
+            <h1 className="work__mid__card__title">
+              <a href="https://www.appcent.mobi">Appcent</a>
+            </h1>
             <p className="work__mid__card__text">
               I worked as a front-end developer intern focusing on React and
               Next.js. Throughout the internship, I learned the fundamentals of

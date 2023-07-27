@@ -29,26 +29,24 @@ export default function Home() {
   };
 
   return (
-    <section ref={ref} className="home">
+    <section ref={ref}>
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 100 },
-          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, x: -100 },
+          visible: { opacity: 1, x: 0 },
         }}
         initial="hidden"
         animate={mainControls}
         transition={{ duration: 1 }}
-        className="home__top"
+        className="home"
       >
-        <h1 className="home__top__title">Hi I'm Tunahan</h1>
-        <h2 className="home__top__text">
+        <h1 className="home__title">Hi I'm Tunahan</h1>
+        <h2 className="home__text">
           Software Engineer //{" "}
           <span className="text-animation">Frontend Developer</span>
         </h2>
-      </motion.div>
-      <div className="home__bot">
         <Button text="Download Resume" onClick={handleDownload} />
-        <div className="home__top__icons">
+        <div className="home__icons">
           <a
             href="https://www.linkedin.com/in/tunahan-t-055244211/"
             target="_blank"
@@ -59,7 +57,7 @@ export default function Home() {
             <FaGithub />
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

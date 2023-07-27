@@ -1,5 +1,7 @@
+@import "../variables.scss";
+
 .card {
-  display: flex;
+  @include flex(center, center, row, 0);
   &--left {
     flex-basis: 50%;
     &__img {
@@ -10,27 +12,25 @@
   }
   &--right {
     flex-basis: 50%;
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex(center, center, column, 1rem);
     &__title {
-      font-size: 2rem;
-      color: greenyellow;
+      @include fontsize(2rem);
+      color: $accent;
+      cursor: pointer;
+      &:hover {
+        color: $primary;
+      }
     }
     &__desc {
-      text-align: start;
-      width: 50%;
+      text-align: center;
+      width: 80%;
     }
     &__links {
-      display: flex;
-      gap: 1rem;
+      @include flex(center, center, row, 1rem);
       a {
-        color: white;
-        text-decoration: none;
+        color: $accent;
         &:hover {
-          color: greenyellow;
+          color: $primary;
         }
       }
     }
@@ -39,38 +39,10 @@
 
 @media screen and (max-width: 768px) {
   .card {
-    flex-direction: column-reverse;
+    @include flex(center, center, column, 0);
     &--left {
       &__img {
-        width: 50%;
-        height: auto;
-        object-fit: cover;
-      }
-    }
-    &--right {
-      flex-basis: 100%;
-      display: flex;
-      gap: 1rem;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      &__title {
-        font-size: 1.5rem;
-      }
-      &__desc {
-        text-align: center;
-        width: 90%;
-      }
-      &__links {
-        display: flex;
-        gap: 1rem;
-        a {
-          color: white;
-          text-decoration: none;
-          &:hover {
-            color: greenyellow;
-          }
-        }
+        display: none;
       }
     }
   }

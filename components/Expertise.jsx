@@ -37,9 +37,9 @@ export default function Expertise() {
         <div className="expertise__mid">
           <h3 className="expertise__mid__subtitle">
             HTML // CSS // Scss // Java // JavaScript // REACT// Node // Express
-            // <span style={{ color: "#adff2f" }}>NEXTJS</span> // Redux // Git
-            // MongoDB // NoSQL{" "}
-            <span style={{ color: "grey" }}>
+            // <span className="next">NEXTJS</span> // Redux // Git // MongoDB
+            // NoSQL{" "}
+            <span className="learn">
               and I'm willing to learn new tech stuff.
             </span>
           </h3>
