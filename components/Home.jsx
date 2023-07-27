@@ -45,6 +45,8 @@ export default function Home() {
           Software Engineer //{" "}
           <span className="text-animation">Frontend Developer</span>
         </h2>
+      </motion.div>
+      <div className="home__bot">
         <Button text="Download Resume" onClick={handleDownload} />
         <div className="home__top__icons">
           <a
@@ -57,8 +59,7 @@ export default function Home() {
             <FaGithub />
           </a>
         </div>
-      </motion.div>
-      <div className="home__bot"></div>
+      </div>
     </section>
   );
 }
