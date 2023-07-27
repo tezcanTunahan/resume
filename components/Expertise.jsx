@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 
 export default function Expertise() {
   const ref = useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true });
   const controls = useAnimation();
 
   const animateTyping = () => {

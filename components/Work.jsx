@@ -4,7 +4,7 @@ import { motion, useInView, useAnimation, delay } from "framer-motion";
 import { useEffect, useRef } from "react";
 export default function Work() {
   const ref = useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
   useEffect(() => {
     if (isInView) {

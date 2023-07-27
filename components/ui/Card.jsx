@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 
 export default function Card({ img, title, desc, tech, link }) {
   const ref = useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
 
   useEffect(() => {
