@@ -5,32 +5,15 @@
   margin: auto;
   @include flex(space-between, center, row, 0);
   &__left {
-    font-size: 1.5rem;
+    @include fontsize(1.5rem);
   }
   &__right {
     &__ul {
-      @include flex(space-between, center, row, 0);
+      @include flex(space-between, center, row, 2rem);
       &__li {
-        padding: 1rem;
+        @include fontsize(1rem);
         span {
           color: $primary;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .nav {
-    &__left {
-      font-size: 1rem;
-    }
-    &__right {
-      &__ul {
-        &__li {
-          a {
-            font-size: 0.8rem;
-          }
         }
       }
     }

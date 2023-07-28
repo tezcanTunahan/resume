@@ -31,7 +31,7 @@ export default function Work() {
         >
           <div className="work__mid__card">
             <h1 className="work__mid__card__title">
-              Your Company could be next
+              Your company could be next
             </h1>
             <p className="work__mid__card__text">
               I am looking for teammates with whom I can share my energy and

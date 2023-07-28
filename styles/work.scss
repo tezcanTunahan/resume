@@ -1,54 +1,34 @@
 @import "./variables.scss";
 .work {
-  border-right: 1px solid $accent;
   height: 100vh;
   width: 80vw;
   margin: auto;
   @include flex(center, flex-start, column, 0);
+  border-right: 1px solid $accent;
   &__top {
     &__title {
-      font-size: 3rem;
+      @include fontsize(3rem);
       margin-bottom: 3rem;
     }
   }
   &__mid {
-    @include flex(center, flex-start, column, 0);
-    gap: 1rem;
+    @include flex(center, flex-start, column, 1rem);
     &__card {
       @include flex(center, flex-start, column, 1rem);
       &__title {
-        font-size: 2rem;
+        @include fontsize(2rem);
         a {
-          color: $accent;
-          &:hover {
-            color: $primary;
-          }
+          padding-bottom: 0.5rem;
+          border-bottom: 1px solid $accent;
         }
       }
       &__text {
-        width: 75%;
+        width: 90%;
         a {
           color: $accent;
           &:hover {
             color: $primary;
           }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .work {
-    &__top {
-      &__title {
-        font-size: 2rem;
-      }
-    }
-    &__mid {
-      &__card {
-        &__title {
-          font-size: 1.5rem;
         }
       }
     }

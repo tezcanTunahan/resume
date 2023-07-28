@@ -43,18 +43,16 @@ export default function Expertise() {
               and I'm willing to learn new tech stuff.
             </span>
           </h3>
-          <div className="expertise__mid__text">
-            <motion.div
-              ref={ref}
-              initial={{ opacity: 0, clipPath: "inset(0% 100% 0% 0%)" }}
-              animate={controls}
-              style={{ fontFamily: "Arial", fontSize: 24, lineHeight: 1.6 }}
-            >
-              I am a computer engineer who is in his senior year. I have a high
-              interest in frontend and web development. I am willing to learn
-              and try new things.
-            </motion.div>
-          </div>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, clipPath: "inset(0% 100% 0% 0%)" }}
+            animate={controls}
+            className="expertise__mid__text"
+          >
+            I am a computer engineer who is in his senior year. I have a high
+            interest in frontend and web development. I am willing to learn and
+            try new things.
+          </motion.div>
         </div>
       </div>
     </section>

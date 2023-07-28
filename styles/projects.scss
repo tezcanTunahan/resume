@@ -5,18 +5,10 @@
   margin: auto;
   @include flex(center, flex-start, column, 0);
   &__title {
-    font-size: 3rem;
+    @include fontsize(3rem);
     margin-bottom: 3rem;
   }
   &__proje {
     @include flex(space-between, center, column, 5rem);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .projects {
-    &__title {
-      font-size: 2rem;
-    }
   }
 }

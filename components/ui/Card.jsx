@@ -1,7 +1,7 @@
 "use client";
 import "@/styles/ui/card.scss";
 import Image from "next/image";
-import { motion, useInView, useAnimation, useScroll } from "framer-motion";
+import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 export default function Card({ img, title, desc, tech, link }) {
