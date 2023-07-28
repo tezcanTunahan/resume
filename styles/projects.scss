@@ -9,6 +9,6 @@
     margin-bottom: 3rem;
   }
   &__proje {
-    @include flex(space-between, center, column, 5rem);
+    @include flex(flex-start, flex-start, column, 5rem);
   }
 }

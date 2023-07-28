@@ -49,9 +49,11 @@ export default function Expertise() {
             animate={controls}
             className="expertise__mid__text"
           >
-            I am a computer engineer who is in his senior year. I have a high
-            interest in frontend and web development. I am willing to learn and
-            try new things.
+            <p>
+              I am a computer engineer who is in his senior year. I have a high
+              interest in frontend and web development. I am willing to learn
+              and try new things.
+            </p>
           </motion.div>
         </div>
       </div>

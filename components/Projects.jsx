@@ -23,6 +23,7 @@ export default function Projects() {
           img={sorting}
           desc="It's basically sorts an array and visualize it"
           link="https://sortvisu.netlify.app/"
+          github="https://github.com/tezcanTunahan/sorting"
           tech="REACT//CSS"
         />
         <Card
@@ -30,6 +31,7 @@ export default function Projects() {
           img={xox}
           desc="It's an XOX game you can play against a computer"
           link="https://tic-tac-toe-olive-pi.vercel.app/"
+          github="https://github.com/tezcanTunahan/tic-tac-toe"
           tech="REACT//CSS"
         />
       </div>

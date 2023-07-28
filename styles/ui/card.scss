@@ -4,46 +4,38 @@
   @include flex(center, center, row, 0);
   &--left {
     flex-basis: 50%;
+    @include flex(flex-start, flex-start, column, 1rem);
+    &__title {
+      @include fontsize(2rem);
+    }
+    &__desc {
+      width: 80%;
+    }
+    &__links {
+      @include flex(center, center, row, 1rem);
+      a {
+        border-bottom: 1px solid $primary;
+        padding-bottom: 0.3rem;
+      }
+    }
+  }
+  &--right {
+    flex-basis: 50%;
     &__img {
       width: 100%;
       height: 400px;
       object-fit: cover;
     }
   }
-  &--right {
-    flex-basis: 50%;
-    @include flex(center, center, column, 1rem);
-    &__title {
-      @include fontsize(2rem);
-      color: $accent;
-      cursor: pointer;
-      &:hover {
-        color: $primary;
-      }
-    }
-    &__desc {
-      text-align: center;
-      width: 80%;
-    }
-    &__links {
-      @include flex(center, center, row, 1rem);
-      a {
-        color: $accent;
-        &:hover {
-          color: $primary;
-        }
-      }
-    }
-  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .card {
-    @include flex(center, center, column, 0);
     &--left {
-      &__img {
-        display: none;
-      }
+      flex-basis: 100%;
+    }
+    &--right {
+      display: none;
     }
   }
 }
