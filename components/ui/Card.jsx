@@ -1,27 +1,56 @@
 "use client";
 import "@/styles/ui/card.scss";
 import Image from "next/image";
-import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Card({ img, title, desc, tech, link, github }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const mainControls = useAnimation();
+  const leftRef = useRef();
+  const rightRef = useRef();
 
   useEffect(() => {
-    if (isInView) {
-      mainControls.start("visible");
-    } else {
-      mainControls.start("hidden");
-    }
-  }, [isInView]);
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: leftRef.current,
+        start: "top 80%",
+        end: "top 80%",
+        scrub: 1,
+      },
+    });
+
+    tl.from(leftRef.current, {
+      x: "-100%",
+      opacity: 0,
+      duration: 1,
+    })
+      .from(
+        rightRef.current,
+        {
+          x: "100%",
+          opacity: 0,
+          duration: 1,
+        },
+        "-=1"
+      )
+      .from(
+        leftRef.current.children,
+        {
+          y: "100%",
+          opacity: 0,
+          duration: 1,
+          stagger: 0.2,
+        },
+        "-=1"
+      );
+  }, []);
 
   return (
-    <div ref={ref} className="card">
-      <div className="card--left">
+    <div className="card">
+      <div className="card--left" ref={leftRef}>
         <div className="card--left__title">
-          <a href="">
+          <a href={link}>
             <h3>{title}</h3>
           </a>
         </div>
@@ -38,18 +67,10 @@ export default function Card({ img, title, desc, tech, link, github }) {
           )}
         </div>
       </div>
-      <div className="card--right">
-        <motion.div
-          variants={{
-            hidden: { opacity: 0, x: -200 },
-            visible: { opacity: 1, x: 0 },
-          }}
-          initial="hidden"
-          animate={mainControls}
-          transition={{ duration: 1 }}
-        >
+      <div className="card--right" ref={rightRef}>
+        <div>
           <Image src={img} alt="" className="card--right__img" />
-        </motion.div>
+        </div>
       </div>
     </div>
   );
