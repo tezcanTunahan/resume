@@ -11,39 +11,28 @@ export default function Card({ img, title, desc, tech, link, github }) {
   const rightRef = useRef();
 
   useEffect(() => {
-    const tl = gsap.timeline({
+    gsap.from(leftRef.current, {
       scrollTrigger: {
         trigger: leftRef.current,
         start: "top 80%",
-        end: "top 80%",
+        end: "bottom 80%",
         scrub: 1,
       },
-    });
-
-    tl.from(leftRef.current, {
-      x: "-100%",
+      y: 100,
       opacity: 0,
       duration: 1,
-    })
-      .from(
-        rightRef.current,
-        {
-          x: "100%",
-          opacity: 0,
-          duration: 1,
-        },
-        "-=1"
-      )
-      .from(
-        leftRef.current.children,
-        {
-          y: "100%",
-          opacity: 0,
-          duration: 1,
-          stagger: 0.2,
-        },
-        "-=1"
-      );
+    });
+    gsap.from(rightRef.current, {
+      scrollTrigger: {
+        trigger: rightRef.current,
+        start: "top 80%",
+        end: "bottom 80%",
+        scrub: 1,
+      },
+      y: 100,
+      opacity: 0,
+      duration: 1,
+    });
   }, []);
 
   return (
