@@ -1,7 +1,7 @@
-"use client";
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
+'use client';
+import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function WorkCard({ title, text, link, children }) {
@@ -10,8 +10,8 @@ export default function WorkCard({ title, text, link, children }) {
     gsap.from(ref.current, {
       scrollTrigger: {
         trigger: ref.current,
-        start: "top 80%",
-        end: "bottom 80%",
+        start: 'top 80%',
+        end: 'bottom 80%',
         scrub: 1,
       },
       y: 100,
@@ -21,13 +21,13 @@ export default function WorkCard({ title, text, link, children }) {
   }, []);
 
   return (
-    <div ref={ref} className="work__mid__card">
-      <h1 className="work__mid__card__title">
-        <a href={link} target="_blank">
+    <div ref={ref} className='work__mid__card'>
+      <h1 className='work__mid__card__title'>
+        <a href={link && '/'} target='_blank'>
           {title}
         </a>
       </h1>
-      <p className="work__mid__card__text">{children}</p>
+      <p className='work__mid__card__text'>{children}</p>
     </div>
   );
 }
