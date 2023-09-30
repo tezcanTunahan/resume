@@ -6,8 +6,6 @@ export const metadata = {
   title: 'Tunahan Tezcan - Software Engineer',
   description: 'Tunahan Tezcan - Software Engineer personal website',
   url: 'https://tunahantezcan.com',
-  image: '/images/og.png',
-  twitter: '@tunahantezcan',
   keywords: [
     'Tunahan Tezcan',
     'Tunahan',
